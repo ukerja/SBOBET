@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SBOBET</string>
+    <string name="title_activity_navigasi">Navigasi</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="Score">Score</string>
+    <string name="Deposit">Deposit</string>
+    <string name="Withdraw">Withdraw</string>
+    <string name="Daftar">Daftar</string>
+    <string name="Togel">Togel</string>
+</resources>

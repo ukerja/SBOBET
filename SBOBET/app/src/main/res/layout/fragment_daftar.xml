@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="145dp"
+        android:text="SBOBET"
+        android:textColor="@color/hint"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_marginLeft="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Bermain aman menggunakan aplikasi resmi"
+        android:textColor="@color/hint"
+        android:textSize="11dp" />
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:text="Nama Pelik Rekening"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/hint"/>
+
+    <EditText
+        android:id="@+id/editTextNama"
+        android:layout_width="match_parent"
+        android:textColor="@color/hint"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Bank"
+        android:textColor="@color/hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:textColor="@color/hint"
+        android:id="@+id/editTextBank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textColor="@color/hint"
+        android:text="Nomor Rekening"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:textColor="@color/hint"
+        android:id="@+id/editTextNorek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"/>
+
+    <TextView
+        android:textColor="@color/hint"
+        android:text="Nomor HP / WhatsApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:textColor="@color/hint"
+        android:id="@+id/editTextNohp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"/>
+
+
+    <Button
+        android:textColor="@color/bg"
+        android:id="@+id/buttonRegister"
+        android:text="@string/Daftar"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
