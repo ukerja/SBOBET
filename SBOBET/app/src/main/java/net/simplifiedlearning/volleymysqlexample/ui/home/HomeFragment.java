@@ -36,8 +36,8 @@ public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;
 
-   private static final String URL_PRODUCTS = "https://sbobet-admin.godisfaith.com/SBOBET/function/getDataForMobile/getPredictionData.php";
-
+    private static final String URL_PRODUCTS = "https://sbobet-admin.godisfaith.com/SBOBET/function/getDataForMobile/getPredictionData.php";
+    String SBOBET_URL, Final_URL;
 
     //a list to store all the products
     List<Product> productList;
@@ -62,7 +62,8 @@ public class HomeFragment extends Fragment {
 ////        recyclerView.setLayoutManager(layoutManager);
 //        recyclerView.setHasFixedSize(true);
 //        return root;
-
+        SBOBET_URL = getString(R.string.SBOBET_URL);
+        Final_URL = SBOBET_URL + "function/getDataForMobile/getPredictionData.php";
 
             productList =new ArrayList<>();
             recyclerView =root.findViewById(R.id.recylcerView);
@@ -80,7 +81,7 @@ public class HomeFragment extends Fragment {
 
     private void loadProducts() {
 
-        StringRequest stringRequest = new StringRequest(Request.Method.GET, URL_PRODUCTS,
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, Final_URL,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

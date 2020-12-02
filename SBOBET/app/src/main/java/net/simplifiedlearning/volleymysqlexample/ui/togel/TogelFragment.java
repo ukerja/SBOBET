@@ -47,6 +47,7 @@ public class TogelFragment extends Fragment {
     //the recyclerview
     RecyclerView recyclerView;
     String[] togel;
+    String SBOBET_URL, Final_URL;
 
 
     @Override
@@ -64,6 +65,8 @@ public class TogelFragment extends Fragment {
 //        recyclerView.setHasFixedSize(true);
 //        return root;
 
+        SBOBET_URL = getString(R.string.SBOBET_URL);
+        Final_URL = SBOBET_URL + "function/getDataForMobile/getTogelData.php?type=";
         togel = getResources().getStringArray(R.array.type_spinner);
         Spinner s1 = (Spinner) root.findViewById(R.id.spinner);
 
@@ -85,11 +88,11 @@ public class TogelFragment extends Fragment {
             public void onItemSelected(AdapterView<?> arg0, View arg1,
                                        int arg2, long arg3) {
                 int index = arg0.getSelectedItemPosition();
-                Toast.makeText(getActivity().getApplicationContext(),
-                        "You have selected item : " + togel[index],
-                        Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getActivity().getApplicationContext(),
+//                        "You have selected item : " + togel[index],
+//                        Toast.LENGTH_SHORT).show();
                 togelList.clear();
-                loadProducts();
+                loadProducts(togel[index]);
 
 
             }
@@ -103,9 +106,9 @@ public class TogelFragment extends Fragment {
 
     }
 
-    private void loadProducts() {
+    private void loadProducts(String type) {
 
-        StringRequest stringRequest = new StringRequest(Request.Method.GET, URL_PRODUCTS,
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, Final_URL+type,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
