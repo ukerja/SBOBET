@@ -13,4 +13,12 @@
     <string name="Withdraw">Withdraw</string>
     <string name="Daftar">Daftar</string>
     <string name="Togel">Togel</string>
+
+    <string-array name="type_spinner">
+        <item>Hongkong Pools</item>
+        <item>Singapore Pools</item>
+        <item>Sydney Pools</item>
+    </string-array>
+
 </resources>
+

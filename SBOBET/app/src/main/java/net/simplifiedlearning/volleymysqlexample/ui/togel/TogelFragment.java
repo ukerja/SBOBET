@@ -1,6 +1,7 @@
 package net.simplifiedlearning.volleymysqlexample.ui.togel;
 
 import android.arch.lifecycle.ViewModelProvider;
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -10,6 +11,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.Response;
@@ -41,7 +46,7 @@ public class TogelFragment extends Fragment {
     ProductsAdapter productsAdapter;
     //the recyclerview
     RecyclerView recyclerView;
-
+    String[] togel;
 
 
     @Override
@@ -58,13 +63,42 @@ public class TogelFragment extends Fragment {
 ////        recyclerView.setLayoutManager(layoutManager);
 //        recyclerView.setHasFixedSize(true);
 //        return root;
-//
+
+        togel = getResources().getStringArray(R.array.type_spinner);
+        Spinner s1 = (Spinner) root.findViewById(R.id.spinner);
+
              togelList = new ArrayList<>();
              recyclerView = root.findViewById(R.id.recylcerView);
              recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
              recyclerView.setHasFixedSize(true);
-       loadProducts();
-       return root;
+
+        Spinner spinner = (Spinner) root.findViewById(R.id.spinner);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getContext(),
+                R.array.type_spinner, android.R.layout.simple_spinner_item);
+
+
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+        s1.setAdapter(adapter);
+        s1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> arg0, View arg1,
+                                       int arg2, long arg3) {
+                int index = arg0.getSelectedItemPosition();
+                Toast.makeText(getActivity().getApplicationContext(),
+                        "You have selected item : " + togel[index],
+                        Toast.LENGTH_SHORT).show();
+                togelList.clear();
+                loadProducts();
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> arg0) {
+            }
+        });
+
+        return root;
 
     }
 
