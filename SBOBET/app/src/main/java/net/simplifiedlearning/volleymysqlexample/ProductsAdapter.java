@@ -38,11 +38,12 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.Produc
     public void onBindViewHolder(ProductViewHolder holder, int position) {
         Product product = productList.get(position);
 
-        holder.imageView.setText(product.getLeague_name());
-        holder.textViewTitle.setText(product.getHome_team());
-        holder.textViewShortDesc.setText(product.getAway_team());
-        holder.textViewRating.setText(String.valueOf(product.getStatus()));
-        holder.textViewPrice.setText(String.valueOf(product.getScore()));
+        holder.imageView.setText(product.getDate());
+        holder.textViewTitle.setText(product.getLeague_name());
+        holder.textViewShortDesc.setText(product.getHome_team());
+        holder.textViewRating.setText(String.valueOf(product.getAway_team()));
+        holder.textViewPrice.setText(String.valueOf(product.getStatus()));
+        holder.textViewScore.setText(product.getScore());
     }
 
     @Override
@@ -52,7 +53,7 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.Produc
 
     class ProductViewHolder extends RecyclerView.ViewHolder {
 
-        TextView textViewTitle, textViewShortDesc, textViewRating, textViewPrice, imageView;
+        TextView textViewTitle, textViewShortDesc, textViewRating, textViewPrice, imageView, textViewScore;
 
         public ProductViewHolder(View itemView) {
             super(itemView);
@@ -62,6 +63,7 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.Produc
             textViewRating = itemView.findViewById(R.id.textViewRating);
             textViewPrice = itemView.findViewById(R.id.textViewPrice);
             imageView = itemView.findViewById(R.id.imageView);
+            textViewScore = itemView.findViewById(R.id.textViewScore);
         }
     }
 }

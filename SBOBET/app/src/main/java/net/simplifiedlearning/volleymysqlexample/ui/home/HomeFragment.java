@@ -36,7 +36,8 @@ public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;
 
-    private static final String URL_PRODUCTS = "http://192.168.1.7/koneksi/Api.php";
+   private static final String URL_PRODUCTS = "https://sbobet-admin.godisfaith.com/SBOBET/function/getDataForMobile/getPredictionData.php";
+
 
     //a list to store all the products
     List<Product> productList;
@@ -95,12 +96,13 @@ public class HomeFragment extends Fragment {
 
                                 //adding the product to product list
                                 productList.add(new Product(
-
                                         product.getString("date"),
                                         product.getString("league_name"),
                                         product.getString("home_team"),
                                         product.getString("away_team"),
-                                        product.getString("status")
+                                        product.getString("status"),
+                                        product.getString("score")
+
                                 ));
                             }
 

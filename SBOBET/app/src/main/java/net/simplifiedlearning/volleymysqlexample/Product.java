@@ -5,16 +5,16 @@ package net.simplifiedlearning.volleymysqlexample;
  */
 
 public class Product {
-
+    private final String date;
     private final String league_name;
     private final String home_team;
     private final String away_team;
     private final String status;
     private final String score;
 
-    public Product( String league_name, String home_team, String away_team, String status, String score) {
 
-
+    public Product( String date ,String league_name, String home_team, String away_team, String status, String score) {
+        this.date = date;
         this.league_name = league_name;
         this.home_team = home_team;
         this.away_team = away_team;
@@ -25,6 +25,9 @@ public class Product {
 
 
 
+    public String getDate() {
+        return date;
+    }
 
     public String getLeague_name() {
         return league_name;

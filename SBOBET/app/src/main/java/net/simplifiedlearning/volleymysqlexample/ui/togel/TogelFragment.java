@@ -39,7 +39,7 @@ public class TogelFragment extends Fragment {
 
     private TogelViewModel togelViewModel;
 
-    private static final String URL_PRODUCTS = "http://192.168.1.7/koneksi/togelApi.php";
+    private static final String URL_PRODUCTS = "https://sbobet-admin.godisfaith.com/SBOBET/function/getDataForMobile/getTogelData.php";
 
     //a list to store all the products
     List<Togel> togelList;
@@ -90,6 +90,7 @@ public class TogelFragment extends Fragment {
                         Toast.LENGTH_SHORT).show();
                 togelList.clear();
                 loadProducts();
+
 
             }
 

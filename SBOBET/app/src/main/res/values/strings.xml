@@ -20,5 +20,7 @@
         <item>Sydney Pools</item>
     </string-array>
 
+    <string name="SBOBET_URL">https://sbobet-admin.godisfaith.com/SBOBET/</string>
+
 </resources>
 

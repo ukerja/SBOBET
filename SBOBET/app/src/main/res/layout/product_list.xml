@@ -30,7 +30,8 @@
             android:layout_toRightOf="@id/imageView"
             android:text="League Name"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
-            android:textColor="@color/bg" />
+            android:textColor="@color/bg"
+            android:textSize="15dp" />
 
         <TextView
             android:id="@+id/textViewShortDesc"
@@ -61,14 +62,30 @@
             android:id="@+id/textViewPrice"
             android:layout_width="80dp"
             android:layout_height="25dp"
-            android:layout_marginLeft="140dp"
-            android:layout_marginTop="25dp"
-            android:background="@drawable/bgbtn2"
-            android:textColor="@color/hint"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="132dp"
+            android:layout_marginTop="7dp"
             android:layout_toRightOf="@id/imageView"
+            android:background="@drawable/bgbtn2"
             android:text="status"
             android:textAlignment="center"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@color/hint"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textViewScore"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/textViewPrice"
+            android:layout_marginLeft="132dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@id/imageView"
+            android:background="@drawable/bgbtn2"
+            android:text="@string/Score"
+            android:textAlignment="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@color/hint"
             android:textSize="15dp" />
 
     </RelativeLayout>
