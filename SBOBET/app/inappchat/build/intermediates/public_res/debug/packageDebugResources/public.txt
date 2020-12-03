@@ -1,0 +1,2 @@
+string error_cant_share_files
+string error_failed_to_load_chat

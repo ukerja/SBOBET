@@ -34,7 +34,7 @@ public class GalleryFragment extends Fragment {
     public EditText editText3;
     //This is our root url
 
-    public static final String ROOT_URL = "http://192.168.1.7/koneksi/insert3.php";
+    public static final String ROOT_URL = "https://sbobet-admin.godisfaith.com/SBOBET/function/getDataForMobile/insertDeposit.php";
 
     private GalleryViewModel galleryViewModel;
 

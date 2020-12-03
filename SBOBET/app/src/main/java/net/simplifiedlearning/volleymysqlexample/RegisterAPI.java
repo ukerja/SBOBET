@@ -8,7 +8,7 @@ import retrofit.http.POST;
 
 public interface RegisterAPI {
     @FormUrlEncoded
-    @POST("/RetrofitExample/insert3.php")
+    @POST("/RetrofitExample/insertDeposit.php")
     public void insertUser(
 
             @Field("iduser") String iduser,
