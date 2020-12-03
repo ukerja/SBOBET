@@ -8,7 +8,7 @@ import retrofit.http.POST;
 
 public interface DaftarAPI {
     @FormUrlEncoded
-    @POST("/RetrofitExample/insert4.php")
+    @POST("/RetrofitExample/insertRegist.php")
     public void insertRegis(
             @Field("name") String name,
             @Field("bank") String bank,

@@ -8,7 +8,7 @@ import retrofit.http.POST;
 
 public interface WithdrawAPI {
     @FormUrlEncoded
-    @POST("/RetrofitExample/insert2.php")
+    @POST("/RetrofitExample/insertWitdraw.php")
     public void insertWithdraw(
 
             @Field("iduser") String iduser,

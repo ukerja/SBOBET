@@ -24,12 +24,26 @@
         android:textSize="35dp"
         android:textStyle="bold" />
 
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/start_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_menu_chat"
+        app:fabSize="normal" />
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recylcerView"
         android:layout_width="match_parent"
-        android:layout_height="451dp"
+        android:layout_height="420dp"
         android:layout_below="@+id/textView"
-        android:layout_marginTop="27dp"
+        android:layout_marginTop="26dp"
         tools:layout_editor_absoluteX="745dp"
         tools:layout_editor_absoluteY="-51dp" />
 </RelativeLayout>

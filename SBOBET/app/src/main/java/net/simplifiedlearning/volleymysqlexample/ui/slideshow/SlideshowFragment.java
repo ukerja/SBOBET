@@ -40,7 +40,7 @@ public class SlideshowFragment extends Fragment {
 
     //This is our root url
 
-    public static final String ROOT_URL = "http://192.168.1.7/koneksi/insert2.php";
+    public static final String ROOT_URL = "https://sbobet-admin.godisfaith.com/SBOBET/function/getDataForMobile/insertWitdraw.php";
 
     private SlideshowViewModel slideshowViewModel;
 

@@ -37,7 +37,7 @@ public class DaftarFragment extends Fragment {
     public EditText editText4;
     //This is our root url
 
-    public static final String ROOT_URL = "http://192.168.1.7/koneksi/insert4.php";
+    public static final String ROOT_URL = "https://sbobet-admin.godisfaith.com/SBOBET/function/getDataForMobile/insertRegist.php";
 
     private DaftarViewModel daftarViewModel;
 
