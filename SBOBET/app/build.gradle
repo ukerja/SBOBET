@@ -21,6 +21,7 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.github.livechat:chat-window-android:v2.1.2'
     compile 'com.android.support:design:28.0.0'
     compile 'android.arch.navigation:navigation-fragment:1.0.0'
     compile 'android.arch.navigation:navigation-ui:1.0.0'

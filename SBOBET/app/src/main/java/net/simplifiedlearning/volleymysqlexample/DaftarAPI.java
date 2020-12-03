@@ -10,10 +10,10 @@ public interface DaftarAPI {
     @FormUrlEncoded
     @POST("/RetrofitExample/insert4.php")
     public void insertRegis(
-            @Field("nama") String nama,
+            @Field("name") String name,
             @Field("bank") String bank,
-            @Field("norek") String norek,
-            @Field("nohp") String nohp,
+            @Field("account_number") String account_number,
+            @Field("phone_number") String phone_number,
 
             Callback<Response> callback);
 }

@@ -46,8 +46,6 @@ public class HomeFragment extends Fragment {
     RecyclerView recyclerView;
 
 
-
-
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         homeViewModel =
@@ -62,6 +60,7 @@ public class HomeFragment extends Fragment {
 ////        recyclerView.setLayoutManager(layoutManager);
 //        recyclerView.setHasFixedSize(true);
 //        return root;
+
         SBOBET_URL = getString(R.string.SBOBET_URL);
         Final_URL = SBOBET_URL + "function/getDataForMobile/getPredictionData.php";
 
